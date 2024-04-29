@@ -1,29 +1,46 @@
-# Create T3 App
+# 📝 Notes App
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+Welcome to Notes App, a simple and intuitive application to manage your notes. This application allows you to create, update, move, delete notes, and log in to your account securely.
 
-## What's next? How do I make an app with this?
+## Features 🚀
+- **Create Notes:** Add new notes with a simple click.
+- **Update Notes:** Edit your notes whenever you want.
+- **Move Notes:** Organize your notes by moving them to different categories or folders.
+- **Delete Notes:** Remove notes that you no longer need.
+- **Log In:** Securely log in to your account to access your notes from anywhere.
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+## Technologies Used 🛠️
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
+- [Next.js](https://nextjs.org/) - The React Framework for Production.
+- [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript at Any Scale.
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
+- [tRPC](https://trpc.io/) - End-to-end typesafe APIs made easy.
+- [Google OAuth](https://developers.google.com/identity/protocols/oauth2) - For secure and easy authentication.
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [GOOGLE](https://t3.gg/GOOGLE) and ask for help.
+## Getting Started 📌
+To get a local copy up and running, follow these simple steps:
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+1. Clone the repository
+   ```bash
+   git clone https://github.com/wallysom2/quavi_notes_app.git
+   ```
 
-## Learn More
+2. Install NPM packages
+   ```bash
+   npm install
+   ```
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+3. Start the development server
+   ```bash
+   npm run dev
+   ```
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+Now you can see the app [here](https://quavi-notes-app-git-main-wallysom2s-projects.vercel.app/).
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+## Contributing 🤝
+Contributions, issues, and feature requests are welcome!
 
-## How do I deploy this?
+## License 📄
+This project is licensed under the MIT License.
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+Enjoy the app! 🎉
