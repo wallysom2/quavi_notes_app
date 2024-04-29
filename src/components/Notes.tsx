@@ -94,7 +94,7 @@ const NotesPage: React.FC = () => {
         onClick={() => addNote("", "")}
         className=" absolute bottom-12 left-1/2 transform -translate-x-1/2 mb-3 me-3 rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 px-10 py-5 text-center text-sm font-medium text-white hover:bg-gradient-to-bl focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
       >
-        Add Note
+        New Note
       </button>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
   {notes.map((note) => (
