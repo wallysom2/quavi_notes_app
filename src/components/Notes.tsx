@@ -45,15 +45,15 @@ const NotesPage: React.FC = () => {
   );
 
   const updateNote = useCallback(
-    (id: string, title: string, content: string) => {
+    (note: Note) => {
       if (status === "authenticated") {
         updateNoteMutation.mutate(
-          { id, title, content },
+          { id: note.id, title: note.title, content: note.content },
           {
             onSuccess: (updatedNote) => {
               setNotes(
                 notes.map((note) =>
-                  note.id === updatedNote.id ? updatedNote : note,
+                  note.id === updatedNote.id ? updatedNote : note
                 ),
               );
             },
@@ -61,8 +61,8 @@ const NotesPage: React.FC = () => {
         );
       } else {
         setNotes(
-          notes.map((note) =>
-            note.id === id ? { ...note, title, content } : note,
+          notes.map((noteItem) =>
+            noteItem.id === note.id ? { ...noteItem, title: note.title, content: note.content } : noteItem
           ),
         );
       }
@@ -97,14 +97,15 @@ const NotesPage: React.FC = () => {
         Add Note
       </button>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {notes.map((note) => (
-          <NoteComponent
-            note={note}
-            updateNote={updateNote}
-            deleteNote={deleteNote}
-          />
-        ))}
-      </div>
+  {notes.map((note) => (
+    <NoteComponent
+      key={note.id}
+      note={note}
+      updateNote={updateNote}
+      deleteNote={deleteNote}
+    />
+  ))}
+</div>
     </div>
   );
 };

@@ -8,12 +8,18 @@ interface Note {
   title: string;
   content: string;
 }
+interface NoteProps {
+  note: Note;
+  updateNote: (note: Note) => void;
+  deleteNote: (id: string) => void;
+}
 
-const NoteComponent: React.FC<{ note: Note; updateNote: any; deleteNote: any }> = ({ note, updateNote, deleteNote }) => {
+
+const NoteComponent: React.FC<NoteProps> = ({ note, updateNote, deleteNote }) => {
   const [inputValue, setInputValue] = useState(note.content);
   const [inputTitle, setInputTitle] = useState(note.title);
-  const [debouncedValue] = useDebounce(inputValue, 500);
-  const [debouncedTitle] = useDebounce(inputTitle, 500);
+  const [debouncedValue] = useDebounce(inputValue, 600);
+  const [debouncedTitle] = useDebounce(inputTitle, 600);
 
   const handleTextAreaChange = (
     event: React.ChangeEvent<HTMLTextAreaElement>,
@@ -29,8 +35,7 @@ const NoteComponent: React.FC<{ note: Note; updateNote: any; deleteNote: any }> 
 
   useEffect(() => {
     if (debouncedValue) {
-      updateNote(note.id, debouncedTitle, debouncedValue);
-    }
+      updateNote({ id: note.id, title: debouncedTitle, content: debouncedValue });    }
   }, [debouncedValue, debouncedTitle]);
 
   return (
