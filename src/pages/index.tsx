@@ -18,9 +18,12 @@ export default function Home() {
       </Head>
       <main className=" flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] ">
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
-        <h1 className="fixed left-1/2 top-60 -translate-x-1/2 transform text-5xl font-extrabold tracking-tight text-white sm:text-[5rem] text-shadow-lg">
-  <span className="text-[hsl(280,100%,70%)] bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">Notes</span> App
-</h1>
+          <h1 className="text-shadow-lg fixed left-1/2 top-52 -translate-x-1/2 transform text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
+            <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-[hsl(280,100%,70%)] text-transparent">
+              Notes
+            </span>{" "}
+            App
+          </h1>
           <div className="md:gap-8">
             <NotesPage />
           </div>
