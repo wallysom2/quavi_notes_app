@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.notes {
+  position: relative;
+  z-index: 10;
+}
