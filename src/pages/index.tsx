@@ -18,9 +18,9 @@ export default function Home() {
       </Head>
       <main className=" flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] ">
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
-          <h1 className="text-shadow-lg fixed left-1/2 top-52 -translate-x-1/2 transform text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
+          <h1 className="text-shadow-lg top-32 fixed left-1/2 -translate-x-1/2 transform text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
             <span className="bg-gradient-to-r from-purple-500 via-pink-600 to-red-500 bg-clip-text text-[hsl(280,100%,70%)] text-transparent">
-              Quavi
+              Qavi
             </span>{" "}
             Notes
           </h1>
